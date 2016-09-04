@@ -10,7 +10,6 @@ input:-webkit-autofill {
     -webkit-text-fill-color: #999 !important; /* цвет текста */
     color: #999 !important; /* цвет текста */
 }
-
 ul, li {
 	margin: 0px;
 	padding: 0px;	
