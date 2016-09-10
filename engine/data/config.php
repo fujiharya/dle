@@ -58,7 +58,7 @@ $config = array (
 
 'adminlog_maxdays' => '30',
 
-'news_number' => '10',
+'news_number' => '3',
 
 'search_number' => '10',
 
