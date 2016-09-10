@@ -132,10 +132,14 @@ div.block-name {
 	text-transform: uppercase;
 	font-weight: bold;
 }
+
+/*============================================ 
+	Краткая новость
+============================================*/
+
 div.short-story {
 	background: #FFF;
 	padding: 30px 15px;
-	margin-bottom: 15px;
 	border-bottom: 1px solid #eee;
 	font-size: 12px;
 	line-height: 1.5;
@@ -178,4 +182,43 @@ a.btn-full-news {
 	margin-right: 7px;
 	font-size: 11px;
 	color: #fff!important;
+}
+
+/*============================================ 
+	Навигация
+============================================*/
+
+div.navigation {
+	background: #FFF;
+	padding: 15px;
+	font-size: 12px;
+
+}
+	div.navigation span {
+		border: 1px solid #ddd;
+		box-shadow: 0 2px 4px rgba(204, 204, 204, 0.4) inset;
+		background-color: #F2F0F3;
+		color: #777;
+		padding: 5px;
+		margin-right: 3px;
+		
+	}
+	div.navigation a {
+		color: #222;
+		padding: 5px;
+		margin-right: 3px;
+	}
+	div.navigation a:hover{
+		text-decoration: none;
+	}
+
+div.link-top a{
+	border: 1px solid #ddd;
+	text-decoration: none;
+	transition: all .3s ease-in-out;
+}
+
+div.link-top a:hover{
+	box-shadow: 0 2px 4px rgba(204, 204, 204, 0.4) inset;
+	text-decoration: none;
 }
