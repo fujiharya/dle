@@ -24,6 +24,8 @@ $config = array (
 
 'seo_type' => '2',
 
+'seo_control' => '1',
+
 'langs' => 'Russian',
 
 'skin' => 'Mobile',
@@ -156,6 +158,10 @@ $config = array (
 
 'allow_comments_cache' => '1',
 
+'allow_gzip' => '1',
+
+'js_min' => '1',
+
 'full_search' => '0',
 
 'fast_search' => '1',
@@ -190,6 +196,8 @@ $config = array (
 
 'allow_change_sort' => '1',
 
+'comments_ajax' => '1',
+
 'online_status' => '1',
 
 'allow_links' => '1',
@@ -199,8 +207,6 @@ $config = array (
 'max_file_count' => '0',
 
 'files_force' => '1',
-
-'files_antileech' => '1',
 
 'files_count' => '1',
 
@@ -254,7 +260,7 @@ $config = array (
 
 'o_seite' => '0',
 
-'max_up_size' => '200',
+'max_up_size' => '80000',
 
 'max_image_days' => '2',
 
@@ -292,8 +298,6 @@ $config = array (
 
 'rss_format' => '1',
 
-'seo_control' => '0',
-
 'allow_complaint_mail' => '0',
 
 'site_offline' => '0',
@@ -310,17 +314,13 @@ $config = array (
 
 'hide_full_link' => '0',
 
-'js_min' => '0',
-
 'allow_cmod' => '0',
 
 'cache_count' => '0',
 
-'comments_ajax' => '0',
-
 'allow_cache' => '0',
 
-'allow_gzip' => '0',
+'files_antileech' => '0',
 
 'use_admin_mail' => '0',
 

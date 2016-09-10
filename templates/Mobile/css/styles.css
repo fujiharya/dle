@@ -3,6 +3,8 @@
 ============================================*/
 body{
 	font-family: 'Open Sans', sans-serif;
+	color: #222;
+	background-color: #AAA;
 }
 input {outline: none;}
 input:-webkit-autofill {
@@ -22,6 +24,7 @@ ul, li {
 div.header {
 	padding: 15px 0px 15px 0px;
 	box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+	background: #FFF;
 }
 
 div.logotype {
@@ -98,4 +101,81 @@ i {
 }
 a[href="http://dle/admin.php?mod=main"] {
 	color: #ca2525;
+}
+
+/*============================================ 
+	Баннер
+============================================*/
+
+div.banner {
+	width: 100%;
+	margin-top: 60px;
+}
+
+/*============================================ 
+	Контентная часть
+============================================*/
+
+div.main {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+div.content {
+}
+
+div.block-name {
+	background-color: #242a30;
+	padding: 15px;
+	color: #FFF;
+	text-shadow: 0 -1px 0 #262626;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+div.short-story {
+	background: #FFF;
+	padding: 30px 15px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #eee;
+	font-size: 12px;
+	line-height: 1.5;
+}
+div.short-story a {
+	color: #ca2525;
+}
+
+div.short-story a:hover {
+	color: #aa2323;
+}
+
+h2.title {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 15px;
+	font-size: 18px;
+	font-weight: bold;
+}
+h2.title > a {
+	transition: color .3s ease-in-out;
+	color: #222;
+}
+
+h2.title > a:hover {
+	text-decoration: none;
+}
+
+span.more-info{
+	color: #777;
+}
+span.separator {
+	font-size: 16px;
+	color: #ccc;
+	font-weight: 300;
+}
+
+a.btn-full-news {
+	text-transform: uppercase;
+	margin-right: 7px;
+	font-size: 11px;
+	color: #fff!important;
 }

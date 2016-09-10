@@ -22,6 +22,9 @@
 	</head>
 	<body>
 	{AJAX}
+
+	<!-- Шапка сайта и авторизация -->
+	<!-- ==========================-->
 	<div class="container-fluid header">
 		<div class="row">
 			<div class="container">
@@ -53,8 +56,34 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src="{THEME}/js/bootstrap.min.js"></script>
 	
-	{info}
-	{content}
+	<!-- Баннеры -->
+	<!-- ==========================-->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 banner">
+				{banner_header}
+			</div>
+		</div>
+	</div>
+
+	<!-- Контентная часть -->
+	<!-- ==========================-->
+	<div class="container main">
+		<div class="row">
+			<!-- Контент -->
+			<div class="col-sm-9">
+				{info}
+				<div class="block-name">
+					Последние новости
+				</div>
+				{content}
+			</div>
+			<!-- Сайд-бар -->
+			<div class="col-sm-3">
+				
+			</div>
+		</div>
+	</div>
 
 </body>
 </html>
