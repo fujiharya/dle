@@ -19,71 +19,93 @@
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 	<!-- <link href="{THEME}/css/engine.css" rel="stylesheet"> -->
-	</head>
+</head>
 	<body>
 	{AJAX}
-
-	<!-- Шапка сайта и авторизация -->
-	<!-- ==========================-->
-	<div class="container-fluid header">
-		<div class="row">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-6 logotype">
-						<span><strong>WellPlay</strong>Radio</span>
-					</div>
-					<div class="col-md-6 text-right">
-						<div class="col-md-6">
-							<form class="form-inline">
-	  							<div class="form-group">
-	  								<div class="input-group">
-	   									<input type="text" class="form-control search" placeholder="Поиск">
-	   									<div class="input-group-addon search"><a href="#"><i class="fa fa-search"></i></a></div>
-	   								</div>
-	  							</div>
-							</form>
+		<!-- Шапка сайта и авторизация -->
+		<!-- ==========================-->
+		<div class="container-fluid header">
+			<div class="row">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 logotype">
+							<span><strong>WellPlay</strong>Radio</span>
 						</div>
-						<div class="col-md-6">
-							{login}
+						<div class="col-md-6 text-right">
+							<div class="col-md-6">
+								<form class="form-inline">
+		  							<div class="form-group">
+		  								<div class="input-group">
+		   									<input type="text" class="form-control search" placeholder="Поиск">
+		   									<div class="input-group-addon search"><a href="#"><i class="fa fa-search"></i></a></div>
+		   								</div>
+		  							</div>
+								</form>
+							</div>
+							<div class="col-md-6">
+								{login}
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<!-- Баннеры -->
+		<!-- ==========================-->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 banner">
+					{banner_header}
+				</div>
+			</div>
+		</div>
+
+		<!-- Контентная часть -->
+		<!-- ==========================-->
+		<div class="container main">
+			<div class="row">
+				<!-- Контент -->
+				<div class="col-sm-9 content">
+					{info}
+					<div class="block-name">
+						Последние новости
+					</div>
+					{content}
+				</div>
+				<!-- Сайд-бар -->
+				<div class="col-sm-3">
+					{include file="sidebar.tpl"}
+				</div>
+			</div>
+		</div>
+
+
+	<!-- Футер сайта================================================== -->
+	<div class="container-fluid footer">
+		<div class="row">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">© WellPlay Radio | 2014 - 2015</div>
+					<div class="col-sm-6 text-right">
+						<ul class="pmn footer-menu">
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Вакансии</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
+
 	<!-- Bootstrap и другие JavaScript
 	================================================== -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src="{THEME}/js/bootstrap.min.js"></script>
-	
-	<!-- Баннеры -->
-	<!-- ==========================-->
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12 banner">
-				{banner_header}
-			</div>
-		</div>
-	</div>
-
-	<!-- Контентная часть -->
-	<!-- ==========================-->
-	<div class="container main">
-		<div class="row">
-			<!-- Контент -->
-			<div class="col-sm-9">
-				{info}
-				<div class="block-name">
-					Последние новости
-				</div>
-				{content}
-			</div>
-			<!-- Сайд-бар -->
-			<div class="col-sm-3">
-				
-			</div>
-		</div>
-	</div>
-
+	<script>
+		$(function () {$('[data-toggle="tooltip"]').tooltip()});
+	</script>
 </body>
+
 </html>

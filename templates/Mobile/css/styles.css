@@ -5,6 +5,7 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	color: #222;
 	background-color: #AAA;
+	padding-top: 60px;
 }
 input {outline: none;}
 input:-webkit-autofill {
@@ -18,18 +19,24 @@ ul, li {
 	list-style: none;
 	
 }
+.pmn {
+	padding: 0;
+	margin: 0;
+}
 /*============================================ 
 	Шапка сайта
 ============================================*/
 div.header {
+	width: 100%;
 	padding: 15px 0px 15px 0px;
 	box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
 	background: #FFF;
+	position: fixed;
+	top: 0px;
+	z-index: 999;
 }
 
-div.logotype {
-	font-size: 20px;
-}
+div.logotype {font-size: 20px;}
 input.search {
 	font-size: 12px;
 	height: 26px;
@@ -44,9 +51,7 @@ div.search {
 	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
 	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
 }
-div.search > a {
-	color: #777;
-}
+div.search > a {color: #777;}
 
 /*============================================ 
 	Авторизация и регистрация
@@ -62,25 +67,14 @@ ul.ul-reg {
 	font-size: 12px;
 	margin-top: 5px;
 }
-
-ul.ul-reg > a, li{
-	margin-bottom: 5px;
-}
-
+ul.ul-reg > a{margin-bottom: 5px;}
 div.login_form__foot > li {
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
-ul.nav-reg {
-	border-bottom: none;
-}
-
-ul.nav-reg > li > a.dropdown-toggle {
-	padding: 0px 20px;
-}
-a.btn-border {
-	margin-bottom: 5px;
-}
+ul.nav-reg {border-bottom: none;}
+ul.nav-reg > li > a.dropdown-toggle {padding: 0px 20px;}
+a.btn-border {margin-bottom: 5px;}
 .dropdown-menu > li {
 	padding: 5px;
 	white-space: nowrap;
@@ -96,17 +90,12 @@ a.btn-border {
   text-decoration: none;
   outline: 0;
 }
-i {
-	padding-right: 5px;
-}
-a[href="http://dle/admin.php?mod=main"] {
-	color: #ca2525;
-}
+i {padding-left: 1px;}
+a[href="http://dle/admin.php?mod=main"] {color: #ca2525;}
 
 /*============================================ 
 	Баннер
 ============================================*/
-
 div.banner {
 	width: 100%;
 	margin-top: 60px;
@@ -115,20 +104,17 @@ div.banner {
 /*============================================ 
 	Контентная часть
 ============================================*/
-
 div.main {
 	margin-top: 60px;
 	margin-bottom: 60px;
 }
-
-div.content {
-}
-
+div.content {}
 div.block-name {
 	background-color: #242a30;
 	padding: 15px;
 	color: #FFF;
 	text-shadow: 0 -1px 0 #262626;
+	font-size: 14px;
 	text-transform: uppercase;
 	font-weight: bold;
 }
@@ -136,7 +122,6 @@ div.block-name {
 /*============================================ 
 	Краткая новость
 ============================================*/
-
 div.short-story {
 	background: #FFF;
 	padding: 30px 15px;
@@ -144,17 +129,9 @@ div.short-story {
 	font-size: 12px;
 	line-height: 1.5;
 }
-div.short-story a {
-	color: #ca2525;
-}
-
-div.short-story a:hover {
-	color: #aa2323;
-}
-
+div.short-story a {color: #ca2525;}
+div.short-story a:hover {color: #aa2323;}
 h2.title {
-	padding: 0;
-	margin: 0;
 	margin-bottom: 15px;
 	font-size: 18px;
 	font-weight: bold;
@@ -163,11 +140,7 @@ h2.title > a {
 	transition: color .3s ease-in-out;
 	color: #222;
 }
-
-h2.title > a:hover {
-	text-decoration: none;
-}
-
+h2.title > a:hover {text-decoration: none;}
 span.more-info{
 	color: #777;
 }
@@ -176,7 +149,6 @@ span.separator {
 	color: #ccc;
 	font-weight: 300;
 }
-
 a.btn-full-news {
 	text-transform: uppercase;
 	margin-right: 7px;
@@ -187,7 +159,6 @@ a.btn-full-news {
 /*============================================ 
 	Навигация
 ============================================*/
-
 div.navigation {
 	background: #FFF;
 	padding: 15px;
@@ -211,14 +182,155 @@ div.navigation {
 	div.navigation a:hover{
 		text-decoration: none;
 	}
-
 div.link-top a{
 	border: 1px solid #ddd;
 	text-decoration: none;
 	transition: all .3s ease-in-out;
 }
-
 div.link-top a:hover{
 	box-shadow: 0 2px 4px rgba(204, 204, 204, 0.4) inset;
 	text-decoration: none;
+}
+
+
+/*============================================ 
+	Плеер на сайте
+============================================*/
+
+div.player{
+	background-color: #242a30;
+	padding: 15px;
+}
+div.player-play{
+	width: 50px;
+	height: 50px;
+	padding: 17px;
+	color: #48535d;
+	line-height: 78;
+	text-align: center;
+}
+	
+div.player-info{
+	float: left;
+	color: #ccc;
+	overflow: hidden;
+}
+div.player-info p{
+	white-space: nowrap;
+	overflow: hidden;
+}
+p.player-wave {
+	font-size: 12px;
+}
+div.player-pad {
+	width: 40px;
+	height: 37px;
+	padding: 11px;
+	text-align: center;
+}
+div.player-pad-pbutton-panel{
+	margin-top: 15px;
+	color: #fff;
+}
+div.pbutton{
+	border: 1px solid #48535d;
+	transition: all .3s ease-in-out;
+	float: left;
+	margin-right: 15px;
+	color: #48535d;
+}
+div.pbutton:hover{
+	color: #FFF;
+	text-shadow: 0 0 20px #fff;
+	border: 1px solid #ccc;
+}
+
+div.player-add {
+	margin-right: 5px;
+}
+
+input#volume_value{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background-color: #ca2525;
+	width: 100%;
+	height: 5px;
+	border-radius: 2px;
+	outline: none;
+	margin-top: 17px;
+}
+input[type="range"]::-webkit-slider-thumb{
+	-webkit-appearance: none;
+	background: #fff;
+	border-radius: 5px;
+	opacity: 1;
+	width: 10px;
+	height: 10px;
+	box-shadow: 0 0 5px #fff;
+}
+
+/*============================================ 
+	Боковая колонка
+============================================*/
+div.widget{
+	margin-top: 15px;
+	background: #FFF;
+}
+h3.widget-title{
+	background-color: #242a30;
+	padding: 15px;
+	color: #FFF;
+	text-shadow: 0 -1px 0 #262626;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+ul.widget-category{
+	list-style-type: none;
+}
+ul.widget-category > li > a{
+	padding: 7px 15px 7px 15px;
+	display: block;
+	border-bottom: 1px solid #eee;
+	color: #222;
+	transition: all .2s ease-in-out;
+}
+ul.widget-category > li > a:hover{
+	background-color: #2d353c;
+	color: #fff;
+	text-decoration: none;
+}
+.calendar a{
+	color: #222;
+	transition: all .2s ease-in-out;
+}
+.calendar a{
+	color: #ca2525;
+	text-decoration: none;
+}
+div#calendar-layer{
+	margin-left: 15%;
+	padding-bottom: 20px;
+}
+th.weekday, td.weekday{color: #ca2525;}
+
+/*============================================ 
+	Футер
+============================================*/
+div.container-fluid.footer{
+	background: #242a30;
+	color: #ccc;
+	padding: 15px 0px 15px 0px;
+	font-size: 12px;
+}
+ul.footer-menu{
+	list-style: none;
+}
+ul.footer-menu > li{
+	display: inline-block;
+
+}
+ul.footer-menu > li >a{
+	color: #ccc;
+	margin-right: 5px;
 }

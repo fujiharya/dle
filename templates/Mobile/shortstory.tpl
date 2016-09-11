@@ -3,7 +3,7 @@
 		<img src="{image-1}" alt="" class="img-responsive">
 	</div>
 	<div class="col-sm-8">
-		<h2 class="title"><a href="{full-link}">{title}</a></h2>
+		<h2 class="title pmn"><a href="{full-link}">{title}</a></h2>
 		<p>{short-story limit='295'}</p>
 		<a href="{full-link}" class="btn btn-danger btn-sm btn-full-news">Читать далее</a>
 		<span class="more-info"> {date=d M Y}</span>
