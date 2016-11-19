@@ -19,6 +19,23 @@
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 	<!-- <link href="{THEME}/css/engine.css" rel="stylesheet"> -->
+	[aviable=showfull]
+<link rel="stylesheet" href="{THEME}/style/markitup.css" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="{THEME}/js/markitup.js" ></script>
+<script type="text/javascript" src="{THEME}/js/mk_set.js" ></script>
+<script type="text/javascript" >
+$(document).ready(function()    {
+    $('textarea.forbbcode').click(function() {
+        if ($("textarea.forbbcode.markItUpEditor").length === 1) {
+             return false;
+        } else {
+            $(this).markItUp(BbcodeSettings).value = "";
+        }
+         return false;
+    });
+});
+</script>
+[/aviable]
 </head>
 	<body>
 	{AJAX}
@@ -65,7 +82,7 @@
 		<div class="container main">
 			<div class="row">
 				<!-- Контент -->
-				<div class="col-sm-9 content">
+				<div class="col-sm-8 content">
 					{info}
 					<div class="block-name">
 						Последние новости
@@ -73,7 +90,7 @@
 					{content}
 				</div>
 				<!-- Сайд-бар -->
-				<div class="col-sm-3">
+				<div class="col-sm-3 right">
 					{include file="sidebar.tpl"}
 				</div>
 			</div>

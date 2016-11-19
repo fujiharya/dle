@@ -1,0 +1,364 @@
+/*============================================ 
+	Шрифты
+============================================*/
+
+/*============================================ 
+	Основные стили
+============================================*/
+.Ri {float: right;}
+.div {display: block;}
+.rel {position: relative;}
+.abs {position: absolute;}
+.cont {display: block;width:100%;}
+.b {font-weight: bold;}
+.ma {margin: 0 auto;}
+body{
+	font-family: 'Open Sans', sans-serif;
+	width: 100%;
+ 	height: 100%;
+ 	line-height:135%;
+}
+input {outline: none;}
+input:-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0 50px #fff !important; /* Цвет фона */
+    -webkit-text-fill-color: #999 !important; /* цвет текста */
+    color: #999 !important; /* цвет текста */
+}
+ul, li {
+	list-style: none;
+}
+.pmn {
+	padding: 0;
+	margin: 0;
+	height: auto!important;
+}
+
+/*============================================ 
+	Шапка сайта
+============================================*/
+
+div.image{
+	background: url('../images/header.jpg') no-repeat;
+	background-position: center center;
+	background-size: 100%;
+	-webkit-background-size: 100%;
+	background-size: cover;
+	width: 100%;
+	height: 539px;
+}
+div.headerText{
+	margin-top: 9rem;
+	margin-bottom: 9rem;
+}
+h1{
+	text-align: center;
+	font-family: 'Rokkitt', serif;
+	color: #FFF;
+	font-size: 4.5em;
+}
+h2.name{
+	font-family: "Open Sans", sans-serif;
+	font-size: 3em;
+	color: #9b59b6;
+	width: 39rem;
+}
+h2.intouch{
+	padding-top: 100px;
+	text-align: center;
+	font-family: 'Rokkitt', serif;
+	color: #9b59b6;
+	font-size: 4.5em;
+}
+hr {
+	line-height: 1px;
+	color: #FFF;
+	width: 40%;
+}
+div.subheader{
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 2em;
+	color: #FFF;
+}
+
+div.logo {
+	cursor: pointer;
+	font-family: 'Open Sans', sans-serif;
+	font-stretch: condensed;
+	font-size: 1em;
+	color: #FFF;
+}
+ul.navigation{
+	padding: 4px;
+}
+ul.navigation li{
+	display: inline;
+}
+ul.navigation li > a{
+	position: relative;
+	display: inline-block;
+	font-size: 1em;
+	font-stretch: condensed;
+	color: #FFF;
+	text-decoration: none;
+}
+ul.navigation li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+ul.navigation li > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+ul.navigation li > a:focus{
+	text-decoration: none;
+	color: #9b59b6;
+}
+ul.navigation li > a:focus:before{
+	display: none;
+	background-color: #9b59b6;
+}
+div.buttonline{
+	margin-top: 11rem;
+}
+button.box {
+	padding: 7% 0% 6% 0%;
+	border-color:transparent;
+	background: #9b59b6;
+	font-family: 'Rokkitt', serif;
+	color: #FFF;
+	font-size: 1.9em;
+}
+button.box:focus {
+	border-color: none;
+	background: #9b59b6;
+	font-family: 'Rokkitt', serif;
+	color: #FFF;
+	font-size: 1.9em;
+}
+div.wrap:hover{
+	background: rgba(155,89,182,0.3);
+}
+div.wrap{
+	padding: 5px;
+	background: rgba(155,89,182,1);
+	transition: all 0.3s ease-in-out;
+}
+/*============================================ 
+	Авторизация и регистрация
+============================================*/
+
+
+/*============================================ 
+	Баннер
+============================================*/
+
+/*============================================ 
+	Контентная часть
+============================================*/
+div.main {
+	margin-top: 15rem;
+}
+
+div.introblock {
+	margin-top: 5rem;
+}
+p.introtext{
+	width: 100rem;
+	font-family: "Open Sans", sans-serif;
+	font-size: 2rem;
+	color: #95a5a6;
+	line-height: 3.5rem;
+	text-indent: 2rem;
+}
+div.announcement{
+	margin-top: 10rem;
+}
+div.announce:last-child{
+	margin-right: 0px!important;
+}
+div.announce{
+
+}
+div.icon{
+	background-position: top center;
+	background-size: 100%;
+	width: 7rem;
+	height: 75px;
+}
+div.icon-write{
+	background: url('../images/icon-write.png') no-repeat;
+}
+div.icon-gps{
+	background: url('../images/icon-gps.png') no-repeat;
+}
+div.icon-candy{
+	background: url('../images/icon-candy.png') no-repeat;
+}
+h3.announceheader{
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.2em;
+	padding: 3%;
+	color: #9b59b6;
+}
+p.announcetext{
+	width: 25rem;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 2.8rem;
+    word-wrap: break-word;
+    color: #95a5a6;
+}
+/*============================================ 
+	Галерея
+============================================*/
+div.gallery{
+	margin-top: 5rem;
+}
+div.galblock{
+    align-items:center;
+}
+.center{
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+}
+/*div.img:nth-child(odd){
+	margin-right:8rem;
+}*/
+/*div.move{
+	width: 67%;
+}*/
+img.img{
+	width: 400px;
+	height: 300px;
+	background-size: cover;
+}
+img.arrow{
+	width:30px;
+	height:30px;
+	position: absolute;
+    top: 0.6rem;
+    right: 1rem;
+}
+span.button-text{
+	margin:auto;
+}
+
+/*============================================ 
+	Блок обратной связи
+============================================*/
+.feedbackform{
+	padding-top: 30px;
+}
+
+textarea.formelem,input.formelem{
+	font-family: 'Rokkitt';
+	font-size: 1.5em;
+	border: none;
+	padding: 15px;
+	background: #e4e8e8;
+}
+input.formelem:first-child{
+	margin-right: 1%;
+}
+input.formelem{
+	width: 25%;
+}
+textarea.foremelem{
+
+}
+/*============================================ 
+	Краткая новость
+============================================*/
+div.short-story,
+div.full-story{
+	
+}
+div.short-story a,
+div.full-story a {color: #ca2525;}
+div.short-story a:hover,
+div.full-story a:hover {color: #aa2323;}
+h2.title {
+	
+}
+h2.title > a {
+	
+}
+h2.title > a:hover {text-decoration: none;}
+s
+}
+
+a.btn-full-news {
+	
+}
+
+/*============================================ 
+	Навигация
+============================================*/
+div.navigation {
+	
+
+}
+div.navigation span {
+	
+		
+}
+div.navigation a {
+	
+}
+div.navigation a:hover{
+	text-decoration: none;
+}
+div.link-top a{
+	
+}
+div.link-top a:hover{
+
+}
+
+/*============================================ 
+	Боковая колонка
+============================================*/
+
+
+/*============================================ 
+	Футер
+============================================*/
+div.container-fluid.footer{
+	
+}
+ul.footer-menu{
+
+}
+ul.footer-menu > li{
+
+}
+ul.footer-menu > li >a{
+
+}
+
+/*============================================ 
+	Полная новость
+============================================*/
+div.full-story{
+}
+
+h2.title{
+}
+span.full-story-info,
+span.full-story-info a{
+}
+span.full-story-info a{
+}

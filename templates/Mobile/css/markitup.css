@@ -1,0 +1,154 @@
+/* -------------------------------------------------------------------
+// markItUp! Universal MarkUp Engine, JQuery plugin
+// By Jay Salvat - http://markitup.jaysalvat.com/
+// Адаптация под DLE - ПафНутиЙ http://pafnuty.name/
+// ------------------------------------------------------------------*/
+textarea.forbbcode {height: 60px; width: 600px; overflow: hidden; border: solid 1px #ccc;} 
+.markItUp * {
+	margin:0px; padding:0px;
+}
+textarea.forbbcode.markItUpEditor {
+	height: 150px;
+	width: 600px;
+	}
+.markItUp a:link,
+.markItUp a:visited {
+	color:#000;
+	text-decoration:none;
+}
+.markItUpContainer  {
+	overflow: hidden;
+}
+.markItUpEditor {
+	font: normal 12px/18px Verdana, sans-serif;
+	padding:5px;
+	clear:both;
+	overflow:auto;
+	width: 590px !important;
+	overflow: hidden;
+}
+
+.markItUpFooter {
+	width:100%;
+}
+.markItUpResizeHandle {
+	overflow:hidden;
+	width:48px; height:8px;
+	margin: 0 auto;
+	background: url(../bbcodes/new/arr_down.png) repeat-x 0 -2px;
+	cursor:n-resize;
+}
+/***************************************************************************************/
+/* first row of buttons */
+.markItUpHeader ul li	{
+	list-style:none;
+	float:left;
+	position:relative;
+}
+.markItUpHeader ul li ul{
+	display:none;
+}
+.markItUpHeader ul li:hover > ul{
+	display:block;
+}
+
+.markItUpHeader ul .markItUpDropMenu li {
+	margin-right:0px;
+}
+.markItUpHeader ul .markItUpSeparator {
+	margin:0 5px;
+	width:1px;
+	height:16px;
+	overflow:hidden;
+	background-color:#ccc;
+	color: #ccc;
+}
+.markItUpHeader ul ul .markItUpSeparator {
+	width:auto; height:1px;
+	margin:0px;
+}
+/* next rows of buttons */
+.markItUpHeader ul ul {
+	display:none;
+	position:absolute;
+	top:22px; left:0px;	
+	background: #d0e5f5;
+	border:1px solid #5bb4e5;
+	height:inherit;
+}
+.markItUpHeader ul ul li {
+	float:none;
+	border-bottom:1px solid #5bb4e5;
+}
+.markItUpHeader ul ul .markItUpDropMenu {
+	background: #d0e5f5;
+}
+/* next rows of buttons */
+.markItUpHeader ul ul ul {
+	position:absolute;
+	top:-1px; left:150px;
+}
+.markItUpHeader ul ul ul li {
+	float:none;
+}
+.markItUpHeader ul a {
+	display:block;
+	width:16px; height:16px;
+	text-indent:-1000px;
+	background-repeat:no-repeat;
+	padding:3px;
+	margin:0px;
+}
+.markItUpHeader ul ul a {
+	display:block;
+	padding-left:0px;
+	text-indent:0;
+	width:120px; 
+	padding:5px 5px 5px 25px;
+	background-position:2px 50%;
+}
+.markItUpHeader ul ul a:hover  {
+	color:#FFF;
+	background-color:#3C769D;
+}
+.bb_button {
+	background-color: #f5f5f5;
+	background-position: 3px 3px;
+	background-repeat: no-repeat;
+	}
+	.bb_button:hover {
+		background-color: #fff;
+		}
+	.bb_button.bold {background-image: url(../bbcodes/new/bold.png);}
+	.bb_button.italic {background-image: url(../bbcodes/new/italic.png);}
+	.bb_button.underline {background-image: url(../bbcodes/new/underline.png);}
+	.bb_button.image {background-image: url(../bbcodes/new/image.png);}
+	.bb_button.link {background-image: url(../bbcodes/new/link.png);}
+	.bb_button.leech {background-image: url(../bbcodes/new/leech.png);}
+	.bb_button.color.markItUpDropMenu {background-image: url(../bbcodes/new/color.png);}
+	.bb_button.add_quote {background-image: url(../bbcodes/new/quote.png);}
+	.bb_button.add_code {background-image: url(../bbcodes/new/code.png);}
+	.bb_button.clean {background-image: url(../bbcodes/new/clear.png);}
+
+	.bb_button.color.markItUpDropMenu ul {
+		width:81px;
+		padding:1px;	
+	}
+	.bb_button.color.markItUpDropMenu  li {
+		border:1px solid white;
+		width:25px;	height:25px;
+		overflow:hidden;
+		padding:0px; margin:0px;
+		float:left;
+		}
+		.bb_button.color.markItUpDropMenu ul a {width:25px; height:25px;}
+		.bb_button.color.markItUpDropMenu ul a:hover {background-color:none;}	
+		.bb_button.color.markItUpDropMenu .col1-1 a {background:yellow;}
+		.bb_button.color.markItUpDropMenu .col1-2 a {background:orange;}
+		.bb_button.color.markItUpDropMenu .col1-3 a {background:red;}
+		.bb_button.color.markItUpDropMenu .col2-1 a {background:blue;}
+		.bb_button.color.markItUpDropMenu .col2-2 a {background:purple;}
+		.bb_button.color.markItUpDropMenu .col2-3 a {background:green;}
+		.bb_button.color.markItUpDropMenu .col3-1 a {background:white;}
+		.bb_button.color.markItUpDropMenu .col3-2 a {background:gray;}
+		.bb_button.color.markItUpDropMenu .col3-3 a {background:black;}

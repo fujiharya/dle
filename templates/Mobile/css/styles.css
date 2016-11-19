@@ -122,15 +122,18 @@ div.block-name {
 /*============================================ 
 	Краткая новость
 ============================================*/
-div.short-story {
+div.short-story ,
+div.full-story{
 	background: #FFF;
 	padding: 30px 15px;
 	border-bottom: 1px solid #eee;
 	font-size: 12px;
 	line-height: 1.5;
 }
-div.short-story a {color: #ca2525;}
-div.short-story a:hover {color: #aa2323;}
+div.short-story a,
+div.full-story a {color: #ca2525;}
+div.short-story a:hover,
+div.full-story a:hover {color: #aa2323;}
 h2.title {
 	margin-bottom: 15px;
 	font-size: 18px;
@@ -333,4 +336,30 @@ ul.footer-menu > li{
 ul.footer-menu > li >a{
 	color: #ccc;
 	margin-right: 5px;
+}
+
+/*============================================ 
+	Полная новость
+============================================*/
+div.full-story{
+	font-size: 14px;
+}
+
+h2.title{
+	font-size: 24px;
+}
+span.full-story-info,
+span.full-story-info a{
+	color: #777;
+	font-size: 12px;
+}
+span.full-story-info a{
+	text-decoration: underline;
+}
+span.full-story-info i.fa {
+	margin-left: 15px;
+	color: #222;
+}
+span.full-story-info i.fa.fa-tags {
+	margin-left: 0px;
 }

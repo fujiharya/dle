@@ -20,15 +20,13 @@ $config = array (
 
 'date_adjust' => 'Europe/Moscow',
 
-'allow_alt_url' => '1',
-
 'seo_type' => '2',
 
 'seo_control' => '1',
 
 'langs' => 'Russian',
 
-'skin' => 'Mobile',
+'skin' => 'Maket1',
 
 'allow_admin_wysiwyg' => '0',
 
@@ -301,6 +299,8 @@ $config = array (
 'allow_complaint_mail' => '0',
 
 'site_offline' => '0',
+
+'allow_alt_url' => '0',
 
 'log_hash' => '0',
 

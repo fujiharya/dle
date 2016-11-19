@@ -4,9 +4,9 @@ define ("DBHOST", "localhost");
 
 define ("DBNAME", "dle");
 
-define ("DBUSER", "root");
+define ("DBUSER", "mysql");
 
-define ("DBPASS", "root");
+define ("DBPASS", "mysql");
 
 define ("PREFIX", "dle");
 
